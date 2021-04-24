@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css" />
+<meta charset = "UTF-8" />
+<meta content="width=device-width, initial-scale=1.0" />
+<title></title>
+</head>
+<body>
+<div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Begin # DIV Form -->
+                    <div id="div-forms">
+                        <form id="search-form" action="">
+                           <button data-dismiss="modal" style="display:none;">
+                            </button>
+                            <div class="modal-body">
+                                <input class="form-control" type="text" placeholder="Search Movie?" name= "search" required>
+								<button class="btn">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+<header>
+<div id="searchbox"><a data-toggle="modal" data-target="#search-modal"><i><button id="searchbutton" class="btn" onclick="morr('search-modal')">Search</button></i></a></div>
+</header>
+<section>
+<div class="container" id="favourite">
+</div>
+</section>
+<section id="footer">
+<div class="container">
+<div class="row">
+<button class="btn" onclick="moremovies()">More</button>
+</div>
+</div>
+</section>
+</body>
+</html>
